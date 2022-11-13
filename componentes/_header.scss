@@ -1,0 +1,65 @@
+/* Barra de Navegacion ----> Configuracion General */
+nav{
+    background-color: #e2001a;
+    /*Alto de la barra de navegacion*/
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 25px 50px;
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    top: 10px;
+    left: 15px;
+}
+
+nav ul{
+    /*Nav a la izquierda*/
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    /*Ponemos el menu en bloques*/
+    display: inline-block;
+    /*Interlineado*/
+    line-height: 80px;
+    /*Margen para separar el menu*/
+    margin: 0px 8px;
+}
+
+nav ul li a{
+    /*Color de texto*/
+    color: #000;
+    /*Tamaño de Texto*/
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Hover */
+nav.active, li a:hover {
+    background-color: #fff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 20px;
+    color: #FFEBC1;
+    /*Elemento a la derecha*/
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* Ocultamos el elemento*/
+    display: none;
+}
+
+#check {
+    display: none;
+}

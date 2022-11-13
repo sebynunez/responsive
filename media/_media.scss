@@ -1,0 +1,57 @@
+/* MEDIA QUERY */
+@media (max-width:950px) {
+    /* Realizamos el responsive cuando la pantalla alcance el tamaño indicado en me Media Query
+    Recordar acomodar los elemenos dependiendo el espacio que tengamos en pantalla*/
+    .enlace {
+        /*Acomodamos el elemento*/
+        padding-left: 20px;
+    }
+    nav ul li a{
+        /*Acomodamos el tamaño de la Tipografia*/
+        font-size: 16px;
+    }
+
+    .trofeos img {
+        margin-left: 3%;
+    }
+
+    .trofeos p {
+        margin-left: 2.5%;
+    }
+
+    .titulo { 
+        margin-left: 10%;
+    }
+
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block; 
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    li a:hover, li a.active {
+        background-color: none;
+        color: #e2001a;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        /* Indicamos la Prioridad del Elemento */
+        z-index: 1;
+    }
+}

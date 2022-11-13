@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* Barra de Navegacion ----> Configuracion General */
+nav {
+  background-color: #e2001a;
+  /*Alto de la barra de navegacion*/
+  height: 80px;
+  width: 100%;
+}
+
+.enlace {
+  position: absolute;
+  padding: 25px 50px;
+}
+
+.logo {
+  position: absolute;
+  width: 60px;
+  top: 10px;
+  left: 15px;
+}
+
+nav ul {
+  /*Nav a la izquierda*/
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li {
+  /*Ponemos el menu en bloques*/
+  display: inline-block;
+  /*Interlineado*/
+  line-height: 80px;
+  /*Margen para separar el menu*/
+  margin: 0px 8px;
+}
+
+nav ul li a {
+  /*Color de texto*/
+  color: #000;
+  /*Tamaño de Texto*/
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Hover */
+nav.active, li a:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 20px;
+  color: #FFEBC1;
+  /*Elemento a la derecha*/
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  /* Ocultamos el elemento*/
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.titulo {
+  font-size: 30px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 30%;
+  margin-top: 30px;
+}
+
+.titulo:hover {
+  color: #e2001a;
+}
+
+.trofeos p {
+  font-size: 30px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
+.trofeos img {
+  margin-left: 27%;
+  margin-top: 4%;
+  margin-bottom: 20%;
+}
+
+footer {
+  background-color: #e2001a;
+}
+
+.marca {
+  position: relative;
+  text-align: left;
+  margin-top: 62px;
+  padding-bottom: 35px;
+}
+
+.derechos {
+  position: absolute;
+  bottom: -75px;
+  color: #eee;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ft {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+.ft img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  margin-top: 15px;
+}
+
+.ft li {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Box-sizing ----> Toma del borde, relleno y ancho de la página*/
+  box-sizing: border-box;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 65vh;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 950px) {
+  /* Realizamos el responsive cuando la pantalla alcance el tamaño indicado en me Media Query
+  Recordar acomodar los elemenos dependiendo el espacio que tengamos en pantalla*/
+  .enlace {
+    /*Acomodamos el elemento*/
+    padding-left: 20px;
+  }
+  nav ul li a {
+    /*Acomodamos el tamaño de la Tipografia*/
+    font-size: 16px;
+  }
+  .trofeos img {
+    margin-left: 3%;
+  }
+  .trofeos p {
+    margin-left: 2.5%;
+  }
+  .titulo {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+  li a:hover, li a.active {
+    background-color: none;
+    color: #e2001a;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    /* Indicamos la Prioridad del Elemento */
+    z-index: 1;
+  }
+}/*# sourceMappingURL=estilo.css.map */
